@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this software or refer to the paper, please cite as follows."
+title: "ESG Performance and Financial Outcomes: A Comparative Analysis of U.S. FinTech and Traditional Financial Institutions — Replication Package"
+authors:
+  - family-names: "Sedghiani"
+    given-names: "Nawres"
+    affiliation: "Graduate School, Bahçeşehir University"
+  - family-names: "Doğan"
+    given-names: "Burak"
+    affiliation: "Department of Economics, FEASS, Bahçeşehir University"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+    email: "burak.dogan@bau.edu.tr"
+date-released: 2026-01-01
+version: "1.0.0"
+license: MIT
+repository-code: "https://github.com/USERNAME/esg-fintech-paper"
+keywords:
+  - ESG
+  - FinTech
+  - sustainable finance
+  - panel data
+  - corporate financial performance
+preferred-citation:
+  type: article
+  title: "ESG Performance and Financial Outcomes: A Comparative Analysis of U.S. FinTech and Traditional Financial Institutions"
+  authors:
+    - family-names: "Sedghiani"
+      given-names: "Nawres"
+    - family-names: "Doğan"
+      given-names: "Burak"
+  year: 2026
+  status: "in preparation"
