@@ -75,7 +75,12 @@ If you use this code or refer to the paper, please cite as indicated in `CITATIO
 
 ## Contact
 
-**Burak Doğan** (corresponding author)
+**Nawres Sedghiani** (corresponding author)
+Graduate School, Bahçeşehir University
+Istanbul, Türkiye
+✉ nawres.sedghiani@bahcesehir.edu.tr
+
+**Burak Doğan** (co-author)
 Department of Economics, FEASS, Bahçeşehir University
 Istanbul, Türkiye
 ✉ burak.dogan@bau.edu.tr
