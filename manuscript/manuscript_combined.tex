@@ -1,11 +1,21 @@
-\documentclass[12pt]{article}
-
 % =====================================================================
 %  ESG Performance and Financial Outcomes:
 %  A Comparative Analysis of U.S. FinTech and Traditional Financial Institutions
 %  Sedghiani & Doğan
-%  SSCI-ready combined manuscript (single-file: title page + body + appendix)
+%
+%  Prepared for submission to: FinTech (MDPI), ISSN 2674-1032
+%  https://www.mdpi.com/journal/fintech
+%
+%  NOTE FOR AUTHORS:
+%  This file is a standalone, compilable LaTeX source written in
+%  MDPI house style (numbered references in square brackets, CRediT
+%  author contributions, standard MDPI back-matter sections).
+%  For the final upload, paste the body into the official MDPI LaTeX
+%  template (Definitive_Article on Overleaf or MDPI's LaTeX gallery)
+%  so that the publisher-side class file (mdpi.cls) is applied.
 % =====================================================================
+
+\documentclass[12pt]{article}
 
 % --- Encoding & fonts ---
 \usepackage[T1]{fontenc}
@@ -31,20 +41,21 @@
 % --- Authors, hyperlinks, ORCID ---
 \usepackage{authblk}
 \usepackage[colorlinks=true,urlcolor=blue,linkcolor=black,citecolor=black]{hyperref}
-\usepackage{orcidlink} % comment out if your TeX distribution lacks it
+\usepackage{orcidlink}
 
 % =====================================================================
-%  Title and authors
+%  Title and authors  (MDPI house style: numbered author affiliations,
+%  corresponding author marked, ORCIDs visible)
 % =====================================================================
 \title{\textbf{ESG Performance and Financial Outcomes:\\
 A Comparative Analysis of U.S. FinTech and Traditional Financial Institutions}}
 
-\author[1]{Nawres Sedghiani\,\orcidlink{0000-0000-0000-0000}}
-\author[2]{Burak Doğan\,\orcidlink{0000-0000-0000-0000}%
-\thanks{\textbf{Corresponding author.} Department of Economics, Faculty of Economics, Administrative and Social Sciences (FEASS), Bahçeşehir University, Çırağan Cad., Beşiktaş 34349, Istanbul, Türkiye. Email: \href{mailto:burak.dogan@bau.edu.tr}{burak.dogan@bau.edu.tr}.}}
+\author[1,*]{Nawres Sedghiani\,\orcidlink{0009-0000-4652-4756}}
+\author[2]{Burak Doğan\,\orcidlink{0000-0002-9585-3318}}
 
-\affil[1]{\small Graduate School, Bahçeşehir University, Istanbul, Türkiye}
-\affil[2]{\small Department of Economics, Faculty of Economics, Administrative and Social Sciences (FEASS), Bahçeşehir University, Istanbul, Türkiye}
+\affil[1]{\small Graduate School, Bahçeşehir University, Çırağan Cad., Beşiktaş 34349, Istanbul, Türkiye; nawres.sedghiani@bahcesehir.edu.tr}
+\affil[2]{\small Department of Economics, Faculty of Economics, Administrative and Social Sciences (FEASS), Bahçeşehir University, Çırağan Cad., Beşiktaş 34349, Istanbul, Türkiye; burak.dogan@bau.edu.tr}
+\affil[*]{\small \textbf{Correspondence:} nawres.sedghiani@bahcesehir.edu.tr}
 
 \date{\small\today}
 
@@ -57,36 +68,24 @@ A Comparative Analysis of U.S. FinTech and Traditional Financial Institutions}}
 %  Abstract, Keywords, JEL
 % =====================================================================
 \begin{abstract}
-\noindent In recent decades, the intersection of technological innovation and sustainability has fundamentally reshaped global financial markets. However, limited empirical evidence exists comparing the impact of Environmental, Social, and Governance (ESG) performance on financial outcomes between traditional financial institutions and the rapidly expanding FinTech sector. This study addresses this gap by utilizing a quantitative, longitudinal panel design spanning 964 active trading days from 2021 to 2025 for U.S.-listed firms. Evaluating daily closing prices, market capitalizations, and Bloomberg/S\&P ESG scores across Equal-Weighted and Market-Capitalization-Weighted portfolios, we analyze risk-adjusted returns and employ a panel regression framework with an interaction term, cluster-robust standard errors, and winsorized dependent variables. Our findings reveal a critical structural divergence. For traditional financial institutions, ESG integration functions primarily as a regulatory baseline, exerting a muted impact on asset profitability (ROA) and market valuation (P/B ratio). FinTech firms, by contrast, exhibit a distinctive dynamic: while they face baseline performance penalties compared to mature banks, superior ESG performance acts as a significant value enhancer, driving substantially higher ROA. There is weaker evidence of a similar positive effect on Return on Equity (ROE), while the relationship with the P/B ratio remains statistically insignificant once extreme outliers are addressed, suggesting that the ESG premium for FinTech firms operates primarily through operational efficiency channels rather than direct market pricing. These findings underscore that the ESG--performance nexus is heavily moderated by a firm's technological infrastructure. The study provides actionable insights for policymakers designing sector-specific sustainability frameworks and for investors seeking an ESG premium in digital finance.
+\noindent In recent decades, the intersection of technological innovation and sustainability has fundamentally reshaped global financial markets. However, limited empirical evidence exists comparing the impact of Environmental, Social, and Governance (ESG) performance on financial outcomes between traditional financial institutions and the rapidly expanding FinTech sector. This study addresses this gap by utilizing a quantitative, longitudinal panel design spanning 964 active trading days from 2021 to 2025 for U.S.\ listed firms. Using daily closing prices, market capitalizations, and Bloomberg and S\&P ESG scores across Equal-Weighted and Market-Capitalization-Weighted portfolios, we analyze risk-adjusted returns and employ a panel regression framework. Our findings reveal a critical structural divergence. For traditional financial institutions, ESG integration functions primarily as a regulatory baseline, exerting a muted impact on Return on Assets (ROA) and market valuation (P/B ratio). For FinTech firms, by contrast, there exhibits a distinctive dynamic: while they face baseline performance penalties compared to mature banks, superior ESG performance acts as a significant value enhancer, driving substantially higher ROA. There is weaker evidence of a similar positive effect on Return on Equity (ROE), while the relationship with the P/B ratio remains statistically insignificant once extreme outliers are addressed, suggesting that the ESG premium for FinTech firms operates primarily through operational efficiency channels rather than direct market pricing. These findings underscore that the ESG--performance nexus is heavily moderated by a firm's technological infrastructure. The study provides actionable insights for policymakers designing sector-specific sustainability frameworks and for investors seeking an ESG premium in digital finance.
 
 \medskip
-\noindent\textbf{Keywords:} FinTech; ESG performance; Sustainable finance; Traditional financial institutions; Corporate financial performance; Panel data regression.
+\noindent\textbf{Keywords:} FinTech; ESG performance; sustainable finance; traditional financial institutions; corporate financial performance; panel data regression
 
 \medskip
-\noindent\textbf{JEL Classification:} G21; G23; G32; M14; O33; Q56.
+\noindent\textbf{JEL Classification:} G21; G23; G32; M14; O33; Q56
 \end{abstract}
-
-% =====================================================================
-%  Highlights (remove if target journal does not request them)
-% =====================================================================
-\section*{Highlights}
-\begin{itemize}[leftmargin=1.4em,itemsep=2pt,topsep=2pt]
-    \item A 2021--2025 panel of U.S. FinTech, non-FinTech, and S\&P 500 firms is examined.
-    \item Panel regressions are estimated with an ESG\,$\times$\,FinTech interaction, cluster-robust SEs, and winsorized DVs.
-    \item ESG integration acts as a regulatory baseline for traditional financial institutions.
-    \item ESG performance significantly raises ROA for FinTech firms (interaction $p<0.01$).
-    \item Effects on ROE are weaker and on the P/B ratio statistically insignificant after outlier treatment.
-\end{itemize}
 
 \newpage
 
 % =====================================================================
 %  Body
 % =====================================================================
-\section{Introduction}
+\section{Introduction}\label{sec:intro}
 In recent decades, the global financial landscape has undergone a profound transformation driven by two major structural shifts: the growing urgency of sustainable development and the rapid expansion of financial technology. The increase of environmental degradation, social inequality, and governance failures has intensified pressure on corporations and financial institutions to move beyond traditional profit-maximization models toward more responsible and transparent business practices. In this context, Environmental, Social, and Governance (ESG) principles have evolved from a voluntary initiative to a fundamental necessity for evaluating corporate sustainability performance alongside financial outcomes.
 
-Simultaneously, the financial sector itself is experiencing significant technological disruption. The emergence of financial technology (FinTech) has reshaped how financial services are delivered, monitored, and regulated (Feyen et al., 2022). Digital platforms, blockchain systems, artificial intelligence, and data-driven risk assessment tools have not only enhanced operational efficiency but also created new opportunities for embedding sustainability principles into financial activities (Hasan et al., 2024). As a result, sustainability is no longer viewed solely as a regulatory obligation but increasingly as a strategic component of competitive advantage.
+Simultaneously, the financial sector itself is experiencing significant technological disruption. The emergence of financial technology (FinTech) has reshaped how financial services are delivered, monitored, and regulated~[11]. Digital platforms, blockchain systems, artificial intelligence, and data-driven risk assessment tools have not only enhanced operational efficiency but also created new opportunities for embedding sustainability principles into financial activities~[17]. As a result, sustainability is no longer viewed solely as a regulatory obligation but increasingly as a strategic component of competitive advantage.
 
 Despite the expanding literature on ESG and corporate financial performance, empirical findings remain mixed and context-dependent. While numerous studies document a positive association between ESG engagement and firm performance, others emphasize potential trade-offs, particularly in the short term. Adding to that, much of the existing research focuses on non-financial corporations, leaving a relative gap in understanding how ESG dynamics operate within the financial sector itself.
 
@@ -105,47 +104,48 @@ The remainder of this paper is organized as follows: Section~\ref{sec:lit} revie
 \subsection{Sustainability and Corporate Financial Performance}
 With the increased global focus on sustainable development and corporate accountability, ESG has emerged as a crucial indicator for evaluating firms beyond traditional financial metrics. However, the relationship between ESG engagement and corporate financial performance has been a subject widely investigated and debated in recent years. This debate is primarily explained by three different theoretical views on how ESG affects firm performance.
 
-From a traditional shareholder value perspective, ESG initiatives may impose additional operational and compliance costs that potentially reduce short-term profitability. According to shareholder theory (Friedman, 1970), the maximization of shareholders' interest is the greatest objective of a company, and investments in environmental protection programs, social responsibility initiatives, governance restructuring and regulatory compliance often require substantial financial resources. Garcia-Castro et al.\ (2008), for instance, discuss how corporate spending on environmental and social activities can negatively affect short-term financial performance, supporting the argument that ESG engagement may initially act as a financial burden. This view suggests that ESG represents a trade-off between social responsibility and shareholder returns.
+From a traditional shareholder value perspective, ESG initiatives may impose additional operational and compliance costs that potentially reduce short-term profitability. According to shareholder theory~[14], the maximization of shareholders' interest is the greatest objective of a company, and investments in environmental protection programs, social responsibility initiatives, governance restructuring and regulatory compliance often require substantial financial resources. Garcia-Castro et al.~[16], for instance, discuss how corporate spending on environmental and social activities can negatively affect short-term financial performance, supporting the argument that ESG engagement may initially act as a financial burden. This view suggests that ESG represents a trade-off between social responsibility and shareholder returns.
 
-In contrast, stakeholder theory (Freeman, 1984) proposes that ESG engagement should not be merely viewed as a cost, but rather as a strategic investment. By addressing the concerns of customers, employees, regulators and investors, firms can enhance their reputation, strengthen stakeholder relationships, and improve long-term value creation. Improved labor practices may increase employee productivity, while stronger governance mechanisms can enhance managerial efficiency and transparency. Under this perspective, ESG contributes positively to firm performance through both reputational and operational improvements (Mahajan et al., 2023).
+In contrast, stakeholder theory~[12] proposes that ESG engagement should not be merely viewed as a cost, but rather as a strategic investment. By addressing the concerns of customers, employees, regulators and investors, firms can enhance their reputation, strengthen stakeholder relationships, and improve long-term value creation. Improved labor practices may increase employee productivity, while stronger governance mechanisms can enhance managerial efficiency and transparency. Under this perspective, ESG contributes positively to firm performance through both reputational and operational improvements~[20].
 
-Empirical evidence increasingly supports this strategic theory. Several studies document a positive association between ESG performance and accounting-based as well as market-based financial indicators. Bahadori et al.\ (2021) show that firms with higher ESG scores demonstrate greater profitability after controlling for firm characteristics. Xie et al.\ (2019), Masila et al.\ (2024) and Nzekwe et al.\ (2021) further report improvements in corporate value and financial performance associated with stronger ESG ratings. Similarly, Friede et al.\ (2015) and Alshehhi et al.\ (2018) found that about 90\% and 78\% of studies respectively share a positive relationship between ESG and firms' financial performance.
+Empirical evidence increasingly supports this strategic theory. Several studies document a positive association between ESG performance and accounting-based as well as market-based financial indicators. Bahadori et al.~[5] show that firms with higher ESG scores demonstrate greater profitability after controlling for firm characteristics. Xie et al.~[29], Masila et al.~[21] and Nzekwe et al.~[23] further report improvements in corporate value and financial performance associated with stronger ESG ratings. Similarly, Friede et al.~[13] and Alshehhi et al.~[4] found that about 90\% and 78\% of studies respectively share a positive relationship between ESG and firms' financial performance.
 
-Beyond the stakeholder perspective, signaling theory (Spence, 1973) provides an additional explanation for the relationship between ESG engagement and a firm's financial performance. In capital markets characterized by information asymmetry between managers and investors, ESG disclosures serve as credible signals of firm quality. Strong ESG performance signals transparency, ethical management, and long-term strategic orientation to investors and other stakeholders. Ahmad et al.\ (2021) argue that ESG disclosures enhance stakeholder trust and corporate credibility, particularly during periods of uncertainty. Similarly, Shakil (2021) emphasizes that ESG engagement strengthens investor confidence and stakeholder loyalty, which can translate into improved financial stability and sustained profitability.
+Beyond the stakeholder perspective, signaling theory~[26] provides an additional explanation for the relationship between ESG engagement and a firm's financial performance. In capital markets characterized by information asymmetry between managers and investors, ESG disclosures serve as credible signals of firm quality. Strong ESG performance signals transparency, ethical management, and long-term strategic orientation to investors and other stakeholders. Ahmad et al.~[2] argue that ESG disclosures enhance stakeholder trust and corporate credibility, particularly during periods of uncertainty. Similarly, Shakil~[24] emphasizes that ESG engagement strengthens investor confidence and stakeholder loyalty, which can translate into improved financial stability and sustained profitability.
 
 Despite the initial debate on ESG and financial performance, evidence remains mixed, suggesting that the impact of ESG is context-dependent and may vary across industries and business models. The financial sector in particular may experience ESG effects differently due to regulatory pressures and technological developments. Traditional financial institutions and FinTech firms operate under distinct business models and infrastructures which may lead to divergent approaches to ESG integration. Therefore, understanding ESG engagement across these institutions represents an important extension of the literature.
 
 \subsection{Sustainability in the Financial Sector}
 The adoption of sustainability principles into financial systems has shifted from a voluntary initiative to a fundamental necessity. In recent years, considering environmental, social, and governance factors in financial analysis has gained increased importance. This evolution has reshaped the focus of investors and regulators from solely on financial performance toward a broader evaluation of sustainability performance.
 
-This transformation coincides with another structural shift within the financial sector: the emergence of financial technology, or FinTech. Although both traditional financial institutions and FinTech firms aim to promote sustainable finance, their methods differ due to their different operational structures and business models. Traditional financial institutions have long maintained their dominance over the financial system by relying on established frameworks and long-standing practices (Allen \& Carletti, 2009). FinTech, by contrast, has expanded rapidly and introduced innovative and technology-driven solutions that challenge the conventional methods of delivering and financing sustainable financial activities (Chuang \& Shrestha, 2025).
+This transformation coincides with another structural shift within the financial sector: the emergence of financial technology, or FinTech. Although both traditional financial institutions and FinTech firms aim to promote sustainable finance, their methods differ due to their different operational structures and business models. Traditional financial institutions have long maintained their dominance over the financial system by relying on established frameworks and long-standing practices~[3]. FinTech, by contrast, has expanded rapidly and introduced innovative and technology-driven solutions that challenge the conventional methods of delivering and financing sustainable financial activities~[9].
 
 \subsection{Sustainability in FinTech and Traditional Financial Institutions}
 The integration of Environmental, Social and Governance (ESG) principles within financial institutions has increasingly evolved as a strategic imperative in response to the increasing pressure from regulators, investors, and society. Nevertheless, ESG practices are embedded substantially differently between FinTech and traditional financial institutions due to differences in organizational structures, innovation, and technological infrastructures.
 
-The financial technology sector drives essential progress in advancing ESG objectives into the financial sector, positioning itself as a strategic pioneer in the development of sustainability-oriented financial services. Their technological agility and innovation-driven business models enable the effective integration of ESG goals into core operations. Digital platforms including blockchain, AI-driven risk assessment tools and mobile financial solutions, facilitate the creation of ESG-focused products such as impact investment platforms and financial inclusion initiatives. Evidence further suggests that countries with more advanced FinTech ecosystems exhibit stronger ESG indicators, indicating a positive relationship between technological maturity and sustainability outcomes. Importantly, FinTech's ESG integration is not merely reactive or regulatory but rather embedded in the structural design of innovation and service delivery models, allowing these firms to bridge access gaps and promote responsible innovation in underbanked regions (Shala \& Berisha, 2024).
+The financial technology sector drives essential progress in advancing ESG objectives into the financial sector, positioning itself as a strategic pioneer in the development of sustainability-oriented financial services. Their technological agility and innovation-driven business models enable the effective integration of ESG goals into core operations. Digital platforms including blockchain, AI-driven risk assessment tools and mobile financial solutions, facilitate the creation of ESG-focused products such as impact investment platforms and financial inclusion initiatives. Evidence further suggests that countries with more advanced FinTech ecosystems exhibit stronger ESG indicators, indicating a positive relationship between technological maturity and sustainability outcomes. Importantly, FinTech's ESG integration is not merely reactive or regulatory but rather embedded in the structural design of innovation and service delivery models, allowing these firms to bridge access gaps and promote responsible innovation in underbanked regions~[25].
 
-These innovations have also influenced traditional financial institutions, which can leverage FinTech to enhance the overall performance of their environmental, social and governance (ESG) activities. For instance, a case study of BNP Paribas demonstrates that digital tools enable the bank to incorporate sustainability into its core business operations, streamline ESG reporting and increase transparency and accountability. This example highlights how FinTech adoption within conventional banks can support the implementation and management of ESG initiatives, reinforcing sustainability outcomes across the financial sector (Galeone et al., 2024).
+These innovations have also influenced traditional financial institutions, which can leverage FinTech to enhance the overall performance of their environmental, social and governance (ESG) activities. For instance, a case study of BNP Paribas demonstrates that digital tools enable the bank to incorporate sustainability into its core business operations, streamline ESG reporting and increase transparency and accountability. This example highlights how FinTech adoption within conventional banks can support the implementation and management of ESG initiatives, reinforcing sustainability outcomes across the financial sector~[15].
 
-When it comes to environmental performance, Svoboda (2023) discusses the role of the financial sector in promoting environmental sustainability through diverse financing mechanisms that support the shift toward a low-carbon economy. The author emphasizes the critical role of traditional financial institutions in environmental performance primarily by providing capital to environmentally beneficial projects. Instruments like green bonds and sustainability-linked loans allow financial institutions to facilitate investments in renewable energy, energy efficiency and sustainable infrastructure, while also fostering transparency and accountability by requiring measurable environmental outcomes.
+When it comes to environmental performance, Svoboda~[27] discusses the role of the financial sector in promoting environmental sustainability through diverse financing mechanisms that support the shift toward a low-carbon economy. The author emphasizes the critical role of traditional financial institutions in environmental performance primarily by providing capital to environmentally beneficial projects. Instruments like green bonds and sustainability-linked loans allow financial institutions to facilitate investments in renewable energy, energy efficiency and sustainable infrastructure, while also fostering transparency and accountability by requiring measurable environmental outcomes.
 
-Similarly, Chang et al.\ (2022) provide empirical evidence on the effect of green bond financing on the environmental outcomes. Their study examines how much green finance as a key financial instrument contributes to improving the quality of the environment. Using ecological footprint indicators as a proxy for environmental performance, the authors analyze data from ten countries that are considered active participants in green finance markets. The results show that in eight of the ten countries, green bond financing is positively associated with improved environmental performance.
+Similarly, Chang et al.~[8] provide empirical evidence on the effect of green bond financing on the environmental outcomes. Their study examines how much green finance as a key financial instrument contributes to improving the quality of the environment. Using ecological footprint indicators as a proxy for environmental performance, the authors analyze data from ten countries that are considered active participants in green finance markets. The results show that in eight of the ten countries, green bond financing is positively associated with improved environmental performance.
 
-In contrast, FinTech companies have developed an alternative mechanism for achieving sustainability objectives with greater speed and broader outreach. Kuosuwan et al.\ (2024) investigate the environmental implications of digital banking particularly in Asia, by examining how the adoption of digital banking services and customer awareness of green banking features influence carbon footprint reduction. Their findings suggest that digital banking processes reduce dependence on paper-based processes and physical infrastructure, thereby lowering energy consumption and carbon emissions traditionally associated with conventional banking operations. Using structural equation modeling, the authors demonstrate that the environmental benefits of digital banking are amplified when technological adoption is accompanied by increased awareness of environmentally responsible service practices.
+In contrast, FinTech companies have developed an alternative mechanism for achieving sustainability objectives with greater speed and broader outreach. Kuosuwan et al.~[18] investigate the environmental implications of digital banking particularly in Asia, by examining how the adoption of digital banking services and customer awareness of green banking features influence carbon footprint reduction. Their findings suggest that digital banking processes reduce dependence on paper-based processes and physical infrastructure, thereby lowering energy consumption and carbon emissions traditionally associated with conventional banking operations. Using structural equation modeling, the authors demonstrate that the environmental benefits of digital banking are amplified when technological adoption is accompanied by increased awareness of environmentally responsible service practices.
 
-Beyond banking digitalization, the literature also highlights the rise of environmental digital platforms developed by FinTech firms to help promote ecological sustainability. A prominent example is Ant Forest, a green initiative embedded within the Alipay platform, designed to encourage environmentally responsible behavior by rewarding users with virtual green points for actions like walking instead of using transportation or using digital payments instead of paper receipts. These virtual points are subsequently converted into tangible environmental outcomes, as accumulated user participation has contributed to the planting of over 100 million trees in desertified regions in China (Zhang \& Anwar, 2023).
+Beyond banking digitalization, the literature also highlights the rise of environmental digital platforms developed by FinTech firms to help promote ecological sustainability. A prominent example is Ant Forest, a green initiative embedded within the Alipay platform, designed to encourage environmentally responsible behavior by rewarding users with virtual green points for actions like walking instead of using transportation or using digital payments instead of paper receipts. These virtual points are subsequently converted into tangible environmental outcomes, as accumulated user participation has contributed to the planting of over 100 million trees in desertified regions in China~[30].
 
-The literature on sustainable finance, particularly the social pillar, has not yet been extensively examined. However, recent studies show that social performance remains an important aspect of ESG engagement for the financial sector. Evidence suggests that the adoption of corporate social responsibility (CSR) practices helps to improve communication with stakeholders, reduce information asymmetry and enable regulators and the public to monitor corporate behavior effectively, thereby promoting accountability and ethical conduct (Li et al., 2024). Moreover, social initiatives of traditional financial institutions and their adoption of financial innovations into their core operations, like digital banking, have expanded financial inclusion and enhanced the access to banking services particularly in underserved populations (Taera \& Lakner, 2025).
+The literature on sustainable finance, particularly the social pillar, has not yet been extensively examined. However, recent studies show that social performance remains an important aspect of ESG engagement for the financial sector. Evidence suggests that the adoption of corporate social responsibility (CSR) practices helps to improve communication with stakeholders, reduce information asymmetry and enable regulators and the public to monitor corporate behavior effectively, thereby promoting accountability and ethical conduct~[19]. Moreover, social initiatives of traditional financial institutions and their adoption of financial innovations into their core operations, like digital banking, have expanded financial inclusion and enhanced the access to banking services particularly in underserved populations~[28].
 
-Beyond environmental and social aspects, governance is another key ESG pillar that has not received much attention in the literature. However, some studies show how FinTech has emerged as a potential driver of improved governance practices. Innovative tools including blockchain, artificial intelligence and machine learning enhance transparency, traceability, and overall ESG reporting and thereby reduce reliance on traditional bureaucratic processes (Abbas \& Ali, 2025). Despite these benefits, challenges remain, such as cybersecurity risks and data privacy concerns (Mertzanis, 2023). Conventional financial institutions, by contrast, have demonstrated alignment with ESG standards through hierarchical governance structures and improved disclosure practices in line with TCFD recommendations (Dye et al., 2021).
+Beyond environmental and social aspects, governance is another key ESG pillar that has not received much attention in the literature. However, some studies show how FinTech has emerged as a potential driver of improved governance practices. Innovative tools including blockchain, artificial intelligence and machine learning enhance transparency, traceability, and overall ESG reporting and thereby reduce reliance on traditional bureaucratic processes~[1]. Despite these benefits, challenges remain, such as cybersecurity risks and data privacy concerns~[22]. Conventional financial institutions, by contrast, have demonstrated alignment with ESG standards through hierarchical governance structures and improved disclosure practices in line with TCFD recommendations~[10].
 
-\section{Methodology}\label{sec:method}
+\section{Materials and Methods}\label{sec:method}
 This study employs a quantitative, longitudinal research design to conduct a comparative analysis between the FinTech sector and the traditional financial sector. The primary objective is to evaluate statistically significant differences in financial performance, risk-adjusted returns, and ESG outcomes over a defined period.
 
+\subsection{Data and Sample}
 Data was sourced exclusively from the Bloomberg Terminal, comprising daily closing prices, market capitalization, and ESG scores (including Bloomberg ESG Percentiles and S\&P Global ESG Rank) spanning from 2021 to 2025. The sample was divided into two distinct cohorts:
 
 \begin{itemize}
-    \item \textbf{Non-FinTech cohort (Benchmark):} The S\&P~500 Index (SPX) was selected as the proxy for the traditional financial market. This index is widely regarded as the best single gauge of large-cap U.S. equities. It serves as the control group, representing established and mature firms with long histories of financial and ESG reporting.
+    \item \textbf{Non-FinTech cohort (Benchmark):} The S\&P~500 Index (SPX) was selected as the proxy for the traditional financial market. This index is widely regarded as the best single gauge of large-cap U.S.\ equities. It serves as the control group, representing established and mature firms with long histories of financial and ESG reporting.
     \item \textbf{FinTech cohort:} Consists of 10 specialized FinTech indices available on the Bloomberg Terminal. These indices were selected to capture a broad representation of the financial technology ecosystem, including sub-sectors such as digital payments, enterprise financial software, and blockchain-based technologies.
 \end{itemize}
 
@@ -164,7 +164,7 @@ To evaluate the sustainability performance of the sample firms, Equal-Weighted (
 \textit{ESG}_{\text{Composite}} = \frac{\textit{ESG}_{\text{Percentile}} + \textit{ESG}_{\text{Rank}}}{2}
 \end{equation}
 
-This methodological choice to average multiple ratings is designed to mitigate the well-documented issue of ESG rating divergence. As Berg et al.\ (2022) demonstrate, measurement divergence---where agencies use different indicators to measure the same attribute---is the primary driver of disagreement among ESG raters, accounting for 56\% of the total divergence. By averaging indicators from different providers, this study reduces idiosyncratic measurement noise and captures the consensus ESG performance as it is priced by financial markets. While this approach is partially limited by the rater effect---a bias where an analyst's general view of a firm influences specific category scores---creating a composite index prevents over-reliance on a single rating agency and yields a more robust, market-representative sustainability metric.
+This methodological choice to average multiple ratings is designed to mitigate the well-documented issue of ESG rating divergence. As Berg et al.~[6] demonstrate, measurement divergence---where agencies use different indicators to measure the same attribute---is the primary driver of disagreement among ESG raters, accounting for 56\% of the total divergence. By averaging indicators from different providers, this study reduces idiosyncratic measurement noise and captures the consensus ESG performance as it is priced by financial markets. While this approach is partially limited by the rater effect---a bias where an analyst's general view of a firm influences specific category scores---creating a composite index prevents over-reliance on a single rating agency and yields a more robust, market-representative sustainability metric.
 
 The EW indices represent the simple average of the composite ESG score across all constituents, whereas the MCW indices aggregate these scores using dynamic market capitalization as the weighting factor.
 
@@ -173,7 +173,7 @@ Prior to econometric estimation, several data treatment procedures were applied 
 
 Second, in addition to market capitalization, financial leverage---measured as the ratio of total debt to total assets (Debt/Assets)---is included as a control variable. Leverage is a standard determinant of profitability and market valuation in corporate finance; its omission can lead to omitted variable bias, particularly since FinTech firms systematically differ from traditional banks in their capital structures.
 
-Third, all standard errors in the panel regression are clustered at the firm level to account for arbitrary within-firm serial correlation and heteroskedasticity (Cameron \& Miller, 2015). With 589 to 608 firm clusters across 21 quarterly periods, clustering at the firm level is the appropriate choice for valid panel inference.
+Third, all standard errors in the panel regression are clustered at the firm level to account for arbitrary within-firm serial correlation and heteroskedasticity~[7]. With 589 to 608 firm clusters across 21 quarterly periods, clustering at the firm level is the appropriate choice for valid panel inference.
 
 \subsection{Model}
 To provide a multidimensional view of performance, raw returns were supplemented with risk-adjusted metrics calculated over the trading period.
@@ -229,7 +229,7 @@ Y_{it} = \beta_0 &+ \beta_1 \textit{ESG}_{it} + \beta_2 \text{FinTech}_i + \beta
 
 Prior to model estimation, a multicollinearity diagnostic was conducted using the Variance Inflation Factor (VIF) on a standard pooled linear model. The continuous main effects---Average ESG, $\ln$(MarketCap), and Debt/Assets---yielded VIF values of 1.57, 1.37, and 1.01 respectively, which fall well below the conventional threshold of 5. While the FinTech dummy and the interaction term ($\textit{ESG}_{it} \times \text{FinTech}_i$) exhibited higher VIF values (10.10 and 8.76), this is a well-documented case of structural multicollinearity inherent to models utilizing interaction terms. Because the interaction is a mathematical product of the main effects, this inflated VIF does not degrade the reliability or statistical significance of the coefficients.
 
-\section{Empirical Results}\label{sec:results}
+\section{Results}\label{sec:results}
 The empirical analysis encompasses 964 active trading days from 2021 to 2025 for the portfolio analysis, and a quarterly firm-level panel of 608 companies across 21 periods for the regression analysis, providing a robust sample for evaluating the comparative dynamics of FinTech and conventional financial institutions.
 
 \subsection{Descriptive Statistics and Return Distributions}
@@ -239,7 +239,7 @@ However, despite this elevated routine volatility, FinTech portfolios systematic
 
 \begin{table}[htbp]
 \centering
-\caption{Descriptive Statistics of Daily Returns}\label{tab:desc_returns}
+\caption{Descriptive Statistics of Daily Returns.}\label{tab:desc_returns}
 \begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{lcccccccccccc}
 \toprule
@@ -278,7 +278,7 @@ Despite the divergence in cumulative growth trajectories, correlation matrices (
 
 \begin{table}[htbp]
 \centering
-\caption{Pearson Correlation Matrix of Daily Returns}\label{tab:corr}
+\caption{Pearson Correlation Matrix of Daily Returns.}\label{tab:corr}
 \begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{lcccccccccccc}
 \toprule
@@ -303,7 +303,7 @@ NonFinTech & 0.83 & 0.71 & 0.75 & 0.81 & 0.73 & 0.81 & 0.75 & 0.84 & 0.77 & 0.82
 \end{table}
 
 \subsection{Risk-Adjusted Performance and Hypothesis Testing}
-When evaluated on a risk-adjusted basis, the performance deficit of the FinTech sector becomes starkly evident. Table~\ref{tab:ratios} presents the average Sharpe and Treynor ratios over the evaluation period (a full quarterly breakdown is provided in the Appendix). The average Sharpe ratios demonstrate that Non-FinTech indices delivered a systematically stronger trade-off between risk and return (0.418 EW and 0.763 MCW) compared to the broadly negative or depressed averages found in the FinTech portfolios.
+When evaluated on a risk-adjusted basis, the performance deficit of the FinTech sector becomes starkly evident. Table~\ref{tab:ratios} presents the average Sharpe and Treynor ratios over the evaluation period (a full quarterly breakdown is provided in Appendix~\ref{app:quarterly}). The average Sharpe ratios demonstrate that Non-FinTech indices delivered a systematically stronger trade-off between risk and return (0.418 EW and 0.763 MCW) compared to the broadly negative or depressed averages found in the FinTech portfolios.
 
 This disparity is further corroborated by the Treynor ratio. Many EW FinTech portfolios generated highly depressed or negative Treynor values, suggesting they failed to adequately compensate investors for their heightened market exposure. In contrast, Non-FinTech institutions proved significantly more efficient at transforming beta exposure into realized returns across both weighting schemes.
 
@@ -311,7 +311,7 @@ To test the statistical validity of these performance disparities, paired sample
 
 \begin{table}[htbp]
 \centering
-\caption{Risk-Adjusted Performance Averages (2022-Q1 to 2025-Q3)}\label{tab:ratios}
+\caption{Risk-Adjusted Performance Averages (2022-Q1 to 2025-Q3).}\label{tab:ratios}
 \begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{lcccccccccccc}
 \toprule
@@ -333,7 +333,7 @@ Avg.\ Treynor & 0.009 & 0.002 & -0.002 & 0.065 & -0.004 & 0.004 & 0.007 & 0.005 
 
 \begin{table}[htbp]
 \centering
-\caption{Paired $t$-test Results ($p$-values) for Daily Returns: Selected Comparisons}\label{tab:ttest}
+\caption{Paired $t$-test Results ($p$-values) for Daily Returns: Selected Comparisons.}\label{tab:ttest}
 \begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{lcccccccccccc}
 \toprule
@@ -364,7 +364,7 @@ This structural gap suggests that traditional financial institutions, likely dri
 
 \begin{table}[htbp]
 \centering
-\caption{Descriptive Statistics of ESG Scores}\label{tab:esg}
+\caption{Descriptive Statistics of ESG Scores.}\label{tab:esg}
 \begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{lcccccccccccc}
 \toprule
@@ -396,7 +396,7 @@ The panel data regression analysis examines the relationship between sustainabil
 
 \begin{table}[htbp]
 \centering
-\caption{Panel Data Regression Analysis Results}\label{tab:reg}
+\caption{Panel Data Regression Analysis Results.}\label{tab:reg}
 \begin{threeparttable}
 \begin{tabular}{lccc}
 \toprule
@@ -451,7 +451,7 @@ To ensure the validity and stability of our core finding, Table~\ref{tab:robust}
 
 \begin{table}[htbp]
 \centering
-\caption{Robustness Checks: ESG $\times$ FinTech Interaction Across Specifications (ROA)}\label{tab:robust}
+\caption{Robustness Checks: ESG $\times$ FinTech Interaction Across Specifications (ROA).}\label{tab:robust}
 \begin{threeparttable}
 \begin{tabular}{lcccc}
 \toprule
@@ -489,15 +489,15 @@ The ESG $\times$ FinTech interaction coefficient ranges from 0.073 to 0.121 acro
 \section{Discussion}\label{sec:discussion}
 The empirical findings of this study offer a critical extension to the ongoing debate surrounding sustainability and corporate financial performance, specifically highlighting how technological infrastructure moderates the ESG--performance nexus.
 
-Firstly, our baseline results for traditional financial institutions align with the nuanced perspectives found in the existing literature. For these mature, highly regulated entities, ESG performance exerts a negligible or marginally negative impact on asset profitability (ROA), while showing no meaningful relationship with equity returns (ROE) or market valuation (P/B ratio). This supports the assertions of Dye et al.\ (2021) that for conventional banks, ESG integration is increasingly viewed by the market as a baseline regulatory compliance mechanism rather than a unique competitive differentiator. Because conventional institutions already possess deep-rooted market trust and established institutional frameworks (Allen \& Carletti, 2009), the marginal financial benefit of incremental ESG improvements is limited.
+Firstly, our baseline results for traditional financial institutions align with the nuanced perspectives found in the existing literature. For these mature, highly regulated entities, ESG performance exerts a negligible or marginally negative impact on asset profitability (ROA), while showing no meaningful relationship with equity returns (ROE) or market valuation (P/B ratio). This supports the assertions of Dye et al.~[10] that for conventional banks, ESG integration is increasingly viewed by the market as a baseline regulatory compliance mechanism rather than a unique competitive differentiator. Because conventional institutions already possess deep-rooted market trust and established institutional frameworks~[3], the marginal financial benefit of incremental ESG improvements is limited.
 
-The central and most robust finding of this study concerns the FinTech sector. Our panel interaction models reveal that FinTech firms face substantial baseline penalties in ROA compared to traditional banks, likely due to their ``liability of newness'' and asset-light structures. However, strong ESG performance acts as a powerful catalyst, actively reversing these deficits. The interaction between ESG scores and FinTech classification is positive, economically meaningful (0.113 per unit of ESG), and statistically robust across all specifications ($p < 0.01$). This phenomenon is best explained through the lens of signaling theory (Spence, 1973) and the arguments presented by Ahmad et al.\ (2021). Because FinTech firms operate in a digital landscape characterized by high data privacy concerns, cybersecurity risks, and low physical presence (Mertzanis, 2023), robust ESG disclosures serve as a vital signal of credibility, ethical governance, and long-term viability.
+The central and most robust finding of this study concerns the FinTech sector. Our panel interaction models reveal that FinTech firms face substantial baseline penalties in ROA compared to traditional banks, likely due to their ``liability of newness'' and asset-light structures. However, strong ESG performance acts as a powerful catalyst, actively reversing these deficits. The interaction between ESG scores and FinTech classification is positive, economically meaningful (0.113 per unit of ESG), and statistically robust across all specifications ($p < 0.01$). This phenomenon is best explained through the lens of signaling theory~[26] and the arguments presented by Ahmad et al.~[2]. Because FinTech firms operate in a digital landscape characterized by high data privacy concerns, cybersecurity risks, and low physical presence~[22], robust ESG disclosures serve as a vital signal of credibility, ethical governance, and long-term viability.
 
 The evidence for ROE is weaker but directionally consistent: the marginally significant positive interaction ($\beta = 0.294,\ p < 0.10$) suggests that ESG integration may also benefit FinTech equity returns, though this finding is sensitive to the treatment of outliers and should be interpreted with caution. The null finding for P/B ratios, by contrast, indicates that the ESG premium for FinTech firms has not yet been fully capitalized into market valuations. This may reflect market uncertainty about the long-term returns to FinTech sustainability investments, or it may indicate that the operational efficiency gains from ESG integration have not yet been recognized by investors as a durable competitive advantage.
 
-These results carry important implications for the three theoretical perspectives reviewed in this study. First, the stakeholder theory perspective (Freeman, 1984; Mahajan et al., 2023) receives strong support for the FinTech sector specifically: firms that invest in addressing stakeholder concerns---including environmental and social responsibilities---achieve measurable improvements in operational performance. Second, the shareholder value perspective (Friedman, 1970; Garcia-Castro et al., 2008) is partially supported by the baseline ESG coefficient for traditional firms, which is weakly negative, consistent with the view that ESG can represent a compliance cost for mature institutions. Third, signaling theory (Spence, 1973; Ahmad et al., 2021) provides the most compelling explanation for the differential effect: ESG functions as a credibility signal that is disproportionately valuable for firms lacking the traditional trust infrastructure of established banks.
+These results carry important implications for the three theoretical perspectives reviewed in this study. First, the stakeholder theory perspective~[12, 20] receives strong support for the FinTech sector specifically: firms that invest in addressing stakeholder concerns---including environmental and social responsibilities---achieve measurable improvements in operational performance. Second, the shareholder value perspective~[14, 16] is partially supported by the baseline ESG coefficient for traditional firms, which is weakly negative, consistent with the view that ESG can represent a compliance cost for mature institutions. Third, signaling theory~[2, 26] provides the most compelling explanation for the differential effect: ESG functions as a credibility signal that is disproportionately valuable for firms lacking the traditional trust infrastructure of established banks.
 
-\section{Conclusion}\label{sec:conclusion}
+\section{Conclusions}\label{sec:conclusion}
 This study investigated the relationship between ESG performance and corporate financial outcomes, comparing traditional financial institutions against the rapidly expanding FinTech sector. Utilizing a panel data regression framework with cluster-robust standard errors, winsorized dependent variables, and appropriate controls over a quarterly panel spanning 2021--2025, this research demonstrates that the financial impact of sustainability is not uniform; rather, it is heavily moderated by an institution's technological and operational model.
 
 The core conclusion is that ESG acts as a significant value enhancer for FinTech companies, substantially boosting their Return on Assets (ROA) and partially offsetting the baseline profitability deficits they face against traditional banks. This finding is robust across multiple econometric specifications, surviving the inclusion of additional controls, winsorization of extreme values, and alternative standard error estimators. There is weaker evidence of a similar positive dynamic for Return on Equity (ROE), while the effect on market valuation (P/B ratio) does not achieve statistical significance once proper data treatment is applied. Traditional financial institutions, conversely, exhibit a flat-to-negative relationship between ESG and profitability, treating sustainability as a regulatory compliance mechanism rather than a strategic driver.
@@ -511,152 +511,139 @@ For policymakers and regulators, this study highlights the need for tailored, se
 This study is subject to several limitations. First, the ESG scores are aggregated from Bloomberg and S\&P Global; incorporating alternative metrics such as carbon footprint data or algorithmic ESG trackers would strengthen external validity. Second, the study focuses on publicly traded companies within the S\&P~500 ecosystem and major FinTech indices; a vast proportion of FinTech innovation occurs in private, venture-backed firms not captured in our sample. Third, while the interaction effect on ROA is robust, the weaker findings for ROE and the null finding for P/B suggest that additional mediating or moderating variables---such as R\&D intensity, regulatory environment, or firm age---may be necessary to fully characterize the ESG--performance relationship across financial sectors. Finally, the quarterly frequency of the panel data limits the ability to capture higher-frequency dynamics; future studies with more granular data could explore whether ESG improvements lead or lag financial performance changes.
 
 % =====================================================================
-%  Bibliography
+%  MDPI back-matter blocks (preferred order)
 % =====================================================================
-\newpage
-\begin{thebibliography}{99}
+
+\vspace{0.6em}
+\noindent\textbf{Author Contributions:} Conceptualization, N.S.\ and B.D.; methodology, N.S.\ and B.D.; software, N.S.; validation, N.S.\ and B.D.; formal analysis, N.S.; investigation, N.S.; data curation, N.S.; writing---original draft preparation, N.S.; writing---review and editing, B.D.; visualization, N.S.; supervision, B.D.; project administration, B.D. All authors have read and agreed to the published version of the manuscript.
+
+\medskip
+\noindent\textbf{Funding:} This research received no external funding.
+
+\medskip
+\noindent\textbf{Institutional Review Board Statement:} Not applicable. This study relies exclusively on publicly available secondary data and does not involve human participants or animals.
+
+\medskip
+\noindent\textbf{Informed Consent Statement:} Not applicable.
+
+\medskip
+\noindent\textbf{Data Availability Statement:} The full replication package for this study---including the processed firm-level quarterly panel dataset, the Equal-Weighted and Market-Capitalization-Weighted ESG and return indices, the variable definitions and codebook, the Replication Guide, and the R and Python scripts that reproduce all reported tables---is publicly available on GitHub at \url{https://github.com/burakdogan-ds/esg-fintech-nawres-dogan} (released under the MIT License for code and CC~BY~4.0 for documentation). Raw inputs were sourced from the Bloomberg Terminal and S\&P Global under institutional license; per the data providers' terms of service, raw data cannot be redistributed and only aggregated/processed outputs are shared in the repository. To fully reproduce the analysis, users with institutional access to the Bloomberg Terminal must pull the variables specified in \texttt{docs/Variable\_Definitions\_Codebook.md} for the firms and date range listed therein, place the resulting files in the \texttt{data/raw/} directory, and execute the analysis scripts in \texttt{code/R/} or \texttt{code/Python/}.
+
+\medskip
+\noindent\textbf{Acknowledgments:} An earlier version of this work formed part of the master's thesis of the first author at the Graduate School of Bahçeşehir University. The authors gratefully thank Derese Kebede Teklie for his valuable input on the econometric specification and panel data estimation strategy. The authors also acknowledge Bahçeşehir University for providing access to the Bloomberg Terminal used in the data collection of this study.
+
+\medskip
+\noindent\textbf{Conflicts of Interest:} The authors declare no conflicts of interest. The funders had no role in the design of the study; in the collection, analyses, or interpretation of data; in the writing of the manuscript; or in the decision to publish the results.
+
+% =====================================================================
+%  References (MDPI numbered style, alphabetical-by-first-cite ordering
+%  has been preserved from the original manuscript with numeric labels
+%  used in the in-text citations above)
+% =====================================================================
+\begin{thebibliography}{99}\setlength{\itemsep}{2pt}
 
 \bibitem{abbas2025}
-Abbas, A., \& Ali, H. (2025). Enhancing compliance and governance in FinTech-enabled public-private sustainability models. \textit{ResearchGate}. \url{https://doi.org/10.13140/RG.2.2.10078.34887}
+Abbas, A.; Ali, H. Enhancing compliance and governance in FinTech-enabled public-private sustainability models. \textit{ResearchGate} \textbf{2025}. \url{https://doi.org/10.13140/RG.2.2.10078.34887}
 
 \bibitem{ahmad2021}
-Ahmad, N., Mobarek, A., \& Roni, N. N. (2021). Revisiting the impact of ESG on financial performance of FTSE350 UK firms: Static and dynamic panel data analysis. \textit{Cogent Business \& Management}, 8(1). \url{https://doi.org/10.1080/23311975.2021.1900500}
+Ahmad, N.; Mobarek, A.; Roni, N.N. Revisiting the impact of ESG on financial performance of FTSE350 UK firms: Static and dynamic panel data analysis. \textit{Cogent Bus.\ Manag.} \textbf{2021}, \textit{8}, 1900500. \url{https://doi.org/10.1080/23311975.2021.1900500}
 
 \bibitem{allen2009}
-Allen, F., \& Carletti, E. (2009). The roles of banks in financial systems. In \textit{Oxford University Press eBooks}. \url{https://doi.org/10.1093/oxfordhb/9780199640935.013.0002}
+Allen, F.; Carletti, E. The roles of banks in financial systems. In \textit{Oxford University Press eBooks}; Oxford University Press: Oxford, UK, 2009. \url{https://doi.org/10.1093/oxfordhb/9780199640935.013.0002}
 
 \bibitem{alshehhi2018}
-Alshehhi, A., Nobanee, H., \& Khare, N. (2018). The impact of sustainability practices on corporate financial performance: Literature trends and future research potential. \textit{Sustainability}, 10(2), 494.
+Alshehhi, A.; Nobanee, H.; Khare, N. The impact of sustainability practices on corporate financial performance: Literature trends and future research potential. \textit{Sustainability} \textbf{2018}, \textit{10}, 494. \url{https://doi.org/10.3390/su10020494}
 
 \bibitem{bahadori2021}
-Bahadori, N., Kaymak, T., \& Seraj, M. (2021). Environmental, social, and governance factors in emerging markets: The impact on firm performance. \textit{Business Strategy \& Development}, 4(4), 411--422.
+Bahadori, N.; Kaymak, T.; Seraj, M. Environmental, social, and governance factors in emerging markets: The impact on firm performance. \textit{Bus.\ Strategy Dev.} \textbf{2021}, \textit{4}, 411--422. \url{https://doi.org/10.1002/bsd2.167}
 
 \bibitem{berg2022}
-Berg, F., K\"olbel, J. F., \& Rigobon, R. (2022). Aggregate confusion: The divergence of ESG ratings. \textit{Review of Finance}, 26(6), 1315--1344.
+Berg, F.; Kölbel, J.F.; Rigobon, R. Aggregate confusion: The divergence of ESG ratings. \textit{Rev.\ Finance} \textbf{2022}, \textit{26}, 1315--1344. \url{https://doi.org/10.1093/rof/rfac033}
 
 \bibitem{cameron2015}
-Cameron, A. C., \& Miller, D. L. (2015). A practitioner's guide to cluster-robust inference. \textit{Journal of Human Resources}, 50(2), 317--372.
+Cameron, A.C.; Miller, D.L. A practitioner's guide to cluster-robust inference. \textit{J.~Hum.\ Resour.} \textbf{2015}, \textit{50}, 317--372. \url{https://doi.org/10.3368/jhr.50.2.317}
 
 \bibitem{chang2022}
-Chang, L., Taghizadeh-Hesary, F., Chen, H., \& Mohsin, M. (2022). Do green bonds have environmental benefits? \textit{Energy Economics}, 115, 106356.
+Chang, L.; Taghizadeh-Hesary, F.; Chen, H.; Mohsin, M. Do green bonds have environmental benefits? \textit{Energy Econ.} \textbf{2022}, \textit{115}, 106356. \url{https://doi.org/10.1016/j.eneco.2022.106356}
 
 \bibitem{chuang2025}
-Chuang, M. Y., \& Shrestha, S. K. (2025). FinTech converges with investment and risk: A bibliometric review. \textit{Journal of Risk and Financial Management}, 18(9), 517.
+Chuang, M.Y.; Shrestha, S.K. FinTech converges with investment and risk: A bibliometric review. \textit{J.~Risk Financ.\ Manag.} \textbf{2025}, \textit{18}, 517. \url{https://doi.org/10.3390/jrfm18090517}
 
 \bibitem{dye2021}
-Dye, J., McKinnon, M., \& Van der Byl, C. (2021). Green gaps: Firm ESG disclosure and financial institutions' reporting requirements. \textit{Journal of Sustainable Research}, 3(1), e210006.
+Dye, J.; McKinnon, M.; Van der Byl, C. Green gaps: Firm ESG disclosure and financial institutions' reporting requirements. \textit{J.~Sustain.\ Res.} \textbf{2021}, \textit{3}, e210006. \url{https://doi.org/10.20900/jsr20210006}
 
 \bibitem{feyen2022}
-Feyen, E. H. B., Natarajan, H., \& Saal, M. (2022). \textit{FinTech and the future of finance: Market and policy implications}. World Bank Group.
+Feyen, E.H.B.; Natarajan, H.; Saal, M. \textit{FinTech and the Future of Finance: Market and Policy Implications}; World Bank Group: Washington, DC, USA, 2022. \url{http://documents.worldbank.org/curated/en/099450005162250110}
 
 \bibitem{freeman1984}
-Freeman, R. E. (1984). \textit{Strategic management: A stakeholder approach}. Pitman.
+Freeman, R.E. \textit{Strategic Management: A Stakeholder Approach}; Pitman: Boston, MA, USA, 1984. \url{https://doi.org/10.1017/CBO9781139192675}
 
 \bibitem{friede2015}
-Friede, G., Busch, T., \& Bassen, A. (2015). ESG and financial performance: Aggregated evidence from more than 2000 empirical studies. \textit{Journal of Sustainable Finance \& Investment}, 5(4), 210--233.
+Friede, G.; Busch, T.; Bassen, A. ESG and financial performance: Aggregated evidence from more than 2000 empirical studies. \textit{J.~Sustain.\ Finance Invest.} \textbf{2015}, \textit{5}, 210--233. \url{https://doi.org/10.1080/20430795.2015.1118917}
 
 \bibitem{friedman1970}
-Friedman, M. (1970). The social responsibility of business is to increase its profits. \textit{The New York Times Magazine}, September 13.
+Friedman, M. The social responsibility of business is to increase its profits. \textit{The New York Times Magazine}, 13 September 1970. \url{https://doi.org/10.1007/978-3-540-70818-6_14}
 
 \bibitem{galeone2024}
-Galeone, G., Ranaldo, S., \& Fusco, A. (2024). ESG and FinTech: Are they connected? \textit{Research in International Business and Finance}, 69, 102225.
+Galeone, G.; Ranaldo, S.; Fusco, A. ESG and FinTech: Are they connected? \textit{Res.~Int.\ Bus.\ Finance} \textbf{2024}, \textit{69}, 102225. \url{https://doi.org/10.1016/j.ribaf.2024.102225}
 
 \bibitem{garciacastro2008}
-Garcia-Castro, R., Arino, M. A., \& Canela, M. A. (2008). Over the long-run? Short-run impact and long-run consequences of stakeholder management. \textit{Business \& Society}, 50(3), 428--455.
+Garcia-Castro, R.; Arino, M.A.; Canela, M.A. Over the long-run? Short-run impact and long-run consequences of stakeholder management. \textit{Bus.~Soc.} \textbf{2008}, \textit{50}, 428--455. \url{https://doi.org/10.1177/0007650308315493}
 
 \bibitem{hasan2024}
-Hasan, M. H., Hossain, M. Z., Hasan, L., \& Dewan, M. A. (2024). FinTech and sustainable finance: How is FinTech shaping the future of sustainable finance? \textit{European Journal of Management, Economics and Business}, 1(3), 100--115.
+Hasan, M.H.; Hossain, M.Z.; Hasan, L.; Dewan, M.A. FinTech and sustainable finance: How is FinTech shaping the future of sustainable finance? \textit{Eur.~J.~Manag.\ Econ.\ Bus.} \textbf{2024}, \textit{1}, 100--115. \url{https://doi.org/10.59324/ejmeb.2024.1(3).09}
 
 \bibitem{kuosuwan2024}
-Kuosuwan, B., Risman, A., Dudukalov, E., \& Kozlova, E. (2024). Digital banking and environmental impact: How FinTech supports carbon footprint reduction. \textit{BIO Web of Conferences}, 145, 05017.
+Kuosuwan, B.; Risman, A.; Dudukalov, E.; Kozlova, E. Digital banking and environmental impact: How FinTech supports carbon footprint reduction. \textit{BIO Web Conf.} \textbf{2024}, \textit{145}, 05017. \url{https://doi.org/10.1051/bioconf/202414505017}
 
 \bibitem{li2024}
-Li, B., Guo, F., Xu, L., \& Meng, S. (2024). FinTech business and corporate social responsibility practices. \textit{Emerging Markets Review}, 59, 101105.
+Li, B.; Guo, F.; Xu, L.; Meng, S. FinTech business and corporate social responsibility practices. \textit{Emerg.\ Mark.\ Rev.} \textbf{2024}, \textit{59}, 101105. \url{https://doi.org/10.1016/j.ememar.2023.101105}
 
 \bibitem{mahajan2023}
-Mahajan, R., Lim, W. M., Sareen, M., Kumar, S., \& Panwar, R. (2023). Stakeholder theory: A review and research agenda. \textit{Journal of Business Research}, 166, 114104.
+Mahajan, R.; Lim, W.M.; Sareen, M.; Kumar, S.; Panwar, R. Stakeholder theory. \textit{J.~Bus.\ Res.} \textbf{2023}, \textit{166}, 114104. \url{https://doi.org/10.1016/j.jbusres.2023.114104}
 
 \bibitem{masila2024}
-Masila, C. K., Nyamute, W., Okiro, K., \& Irungu, M. (2024). Does corporate sustainability reporting influence financial performance? Evidence from Kenyan listed companies. \textit{European Journal of Business and Management Research}, 9(1), 79--84.
+Masila, C.K.; Nyamute, W.; Okiro, K.; Irungu, M. Does corporate sustainability reporting influence financial performance? Evidence from Kenyan listed companies. \textit{Eur.~J.~Bus.\ Manag.\ Res.} \textbf{2024}, \textit{9}, 79--84. \url{https://doi.org/10.24018/ejbmr.2024.9.1.2270}
 
 \bibitem{mertzanis2023}
-Mertzanis, C. (2023). FinTech finance and social-environmental performance around the world. \textit{Finance Research Letters}, 56, 104107.
+Mertzanis, C. FinTech finance and social-environmental performance around the world. \textit{Finance Res.\ Lett.} \textbf{2023}, \textit{56}, 104107. \url{https://doi.org/10.1016/j.frl.2023.104107}
 
 \bibitem{nzekwe2021}
-Nzekwe, O. G., Okoye, P. V. C., \& Amahalu, N. N. (2021). Effect of sustainability reporting on financial performance of quoted industrial goods companies in Nigeria. \textit{International Journal of Management Studies and Social Science Research}, 3(5), 265--280.
+Nzekwe, O.G.; Okoye, P.V.C.; Amahalu, N.N. Effect of sustainability reporting on financial performance of quoted industrial goods companies in Nigeria. \textit{Int.\ J.~Manag.\ Stud.\ Soc.\ Sci.\ Res.} \textbf{2021}, \textit{3}, 265--280. \url{https://www.ijmsssr.org/paper/IJMSSSR00536.pdf}
 
 \bibitem{shakil2021}
-Shakil, M. H. (2021). Environmental, social and governance performance and financial risk: Moderating role of ESG controversies and board gender diversity. \textit{Resources Policy}, 72, 102144.
+Shakil, M.H. Environmental, social and governance performance and financial risk: Moderating role of ESG controversies and board gender diversity. \textit{Resour.\ Policy} \textbf{2021}, \textit{72}, 102144. \url{https://doi.org/10.1016/j.resourpol.2021.102144}
 
 \bibitem{shala2024}
-Shala, A., \& Berisha, V. (2024). The impact of FinTech on the achievement of environmental, social, and governance (ESG) goals. In \textit{Contemporary Studies in Economic and Financial Analysis} (pp.\ 55--77). Emerald Publishing Limited.
+Shala, A.; Berisha, V. The impact of FinTech on the achievement of environmental, social, and governance (ESG) goals. In \textit{Contemporary Studies in Economic and Financial Analysis}; Emerald Publishing Limited: Bingley, UK, 2024; pp.~55--77. \url{https://doi.org/10.1108/S1569-37592024000113A004}
 
 \bibitem{spence1973}
-Spence, M. (1973). Job market signaling. \textit{Quarterly Journal of Economics}, 87(3), 355--374.
+Spence, M. Job market signaling. \textit{Q.~J.~Econ.} \textbf{1973}, \textit{87}, 355--374. \url{https://doi.org/10.2307/1882010}
 
 \bibitem{svoboda2023}
-Svoboda, A. (2023). The role of financial services in the transition to a sustainable economy. \textit{Journal of Strategic Innovation \& Sustainability}, 18(3), 1--13.
+Svoboda, A. The role of financial services in the transition to a sustainable economy. \textit{J.~Strateg.\ Innov.\ Sustain.} \textbf{2023}, \textit{18}, 1--13. \url{https://doi.org/10.33423/jsis.v18i3.6585}
 
 \bibitem{taera2025}
-Taera, E. G., \& Lakner, Z. (2025). Sustainable finance: Bridging circular economy goals and financial inclusion in developing economies. \textit{World}, 6(2), 44.
+Taera, E.G.; Lakner, Z. Sustainable finance: Bridging circular economy goals and financial inclusion in developing economies. \textit{World} \textbf{2025}, \textit{6}, 44. \url{https://doi.org/10.3390/world6020044}
 
 \bibitem{xie2019}
-Xie, J., Nozawa, W., Yagi, M., Fujii, H., \& Managi, S. (2019). Do environmental, social, and governance activities improve corporate financial performance? \textit{Business Strategy and the Environment}, 28(2), 286--300.
+Xie, J.; Nozawa, W.; Yagi, M.; Fujii, H.; Managi, S. Do environmental, social, and governance activities improve corporate financial performance? \textit{Bus.~Strategy Environ.} \textbf{2019}, \textit{28}, 286--300. \url{https://doi.org/10.1002/bse.2224}
 
 \bibitem{zhang2023}
-Zhang, Q., \& Anwar, M. A. (2023). Leveraging gamification technology to motivate environmentally responsible behavior: An empirical examination of Ant Forest. \textit{Decision Sciences}. \url{https://doi.org/10.1111/deci.12618}
+Zhang, Q.; Anwar, M.A. Leveraging gamification technology to motivate environmentally responsible behavior: An empirical examination of Ant Forest. \textit{Decis.\ Sci.} \textbf{2023}. \url{https://doi.org/10.1111/deci.12618}
 
 \end{thebibliography}
-
-% =====================================================================
-%  Declarations
-% =====================================================================
-\newpage
-\section*{Declarations}
-
-\subsection*{Funding}
-This research received no specific grant from any funding agency in the public, commercial, or not-for-profit sectors.
-
-\subsection*{Conflicts of Interest}
-The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
-
-\subsection*{Ethical Approval and Consent to Participate}
-Not applicable. This study relies exclusively on publicly available secondary data and does not involve human participants or animals.
-
-\subsection*{Consent for Publication}
-Not applicable.
-
-\subsection*{Author Contributions (CRediT)}
-\textbf{Nawres Sedghiani:} Conceptualization, Data curation, Formal analysis, Investigation, Methodology, Visualization, Writing -- original draft. \textbf{Burak Doğan:} Conceptualization, Methodology, Supervision, Validation, Writing -- review \& editing.
-
-\subsection*{Data Availability}
-The datasets generated and analyzed during the current study are available as supplementary files accompanying this submission. Specifically, the following materials are provided:
-\begin{enumerate}
-    \item \textbf{Panel dataset} (\texttt{panel\_dataset.csv}): The full firm-level quarterly panel dataset containing all variables used in the regression analysis, including financial performance metrics (ROA, ROE, P/B ratio), ESG scores (Bloomberg ESG Percentile, S\&P Global ESG Rank, and the composite average), market capitalization, leverage, and FinTech classification indicators.
-    \item \textbf{ESG portfolio data} (\texttt{ESG\_Portfolios.xlsx}): Equal-Weighted (EW) and Market-Capitalization-Weighted (MCW) ESG score indices for all benchmark and FinTech indices.
-    \item \textbf{Financial return data} (\texttt{Financial\_Returns\_Data.xlsx}): Daily log returns, cumulative returns, risk-free rates, and quarterly Sharpe and Treynor ratios for all indices.
-    \item \textbf{Variable definitions and codebook} (\texttt{Variable\_Definitions\_Codebook.md}): Complete documentation of all variables, coding schemes, data sources, and transformations applied.
-    \item \textbf{Statistical code:}
-    \begin{itemize}
-        \item \texttt{Panel\_Analysis\_R\_Code.R}: R script replicating all panel regression results (Tables~\ref{tab:reg} and~\ref{tab:robust}), model specification tests (Hausman, Breusch--Pagan), VIF diagnostics, and robustness checks.
-        \item \texttt{Panel\_Analysis\_Python\_Replication.py}: Python replication script for all regression analyses.
-    \end{itemize}
-\end{enumerate}
-All raw data were sourced from the Bloomberg Terminal under institutional license. The processed datasets and complete replication code are provided to enable full verification of the reported results.
-
-\subsection*{Acknowledgements}
-The authors gratefully acknowledge Bahçeşehir University for providing access to the Bloomberg Terminal used in the data collection of this study. An earlier version of this work formed part of the master's thesis of the first author at the Graduate School of Bahçeşehir University.
 
 % =====================================================================
 %  Appendix
 % =====================================================================
 \newpage
 \appendix
-\section*{Appendix}
+\section{Quarterly Sharpe and Treynor Ratios}\label{app:quarterly}
 
 \begin{table}[htbp]
 \centering
-\caption{Quarterly Sharpe Ratios (2022-Q1 to 2025-Q3)}
+\caption{Quarterly Sharpe Ratios (2022-Q1 to 2025-Q3).}
 \begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{lcccccccccccc}
 \toprule
@@ -706,7 +693,7 @@ Quarter & SPX & UBXXFINT & MLFINTEC & BIGLFPVP & JP2PMT & BEFAP & BFPAT & FGFBIP
 
 \begin{table}[htbp]
 \centering
-\caption{Quarterly Treynor Ratios (2022-Q1 to 2025-Q3)}
+\caption{Quarterly Treynor Ratios (2022-Q1 to 2025-Q3).}
 \begin{adjustbox}{max width=\textwidth}
 \begin{tabular}{lcccccccccccc}
 \toprule
