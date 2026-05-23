@@ -5,15 +5,22 @@ authors:
   - family-names: "Sedghiani"
     given-names: "Nawres"
     affiliation: "Graduate School, Bahçeşehir University"
+    orcid: "https://orcid.org/0009-0000-4652-4756"
+    email: "nawres.sedghiani@bahcesehir.edu.tr"
   - family-names: "Doğan"
     given-names: "Burak"
     affiliation: "Department of Economics, FEASS, Bahçeşehir University"
-    orcid: "https://orcid.org/0000-0000-0000-0000"
+    orcid: "https://orcid.org/0000-0002-9585-3318"
     email: "burak.dogan@bau.edu.tr"
+contact:
+  - family-names: "Sedghiani"
+    given-names: "Nawres"
+    email: "nawres.sedghiani@bahcesehir.edu.tr"
+    affiliation: "Graduate School, Bahçeşehir University"
 date-released: 2026-01-01
 version: "1.0.0"
 license: MIT
-repository-code: "https://github.com/USERNAME/esg-fintech-paper"
+repository-code: "https://github.com/burakdogan-ds/esg-fintech-nawres-dogan"
 keywords:
   - ESG
   - FinTech
@@ -26,7 +33,9 @@ preferred-citation:
   authors:
     - family-names: "Sedghiani"
       given-names: "Nawres"
+      orcid: "https://orcid.org/0009-0000-4652-4756"
     - family-names: "Doğan"
       given-names: "Burak"
+      orcid: "https://orcid.org/0000-0002-9585-3318"
   year: 2026
   status: "in preparation"
